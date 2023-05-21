@@ -26,7 +26,7 @@ print("Percentage of Fraud Transactions",((cn[1]/(cn[0]+cn[1]))*100),'\n')
 print(df.corr()['Class'],'\n')
 
 # Plotting Histogram for Class
-plt.title('Class')
+plt.title('Legit='+str((cn[0]/(cn[0]+cn[1]))*100)+'%')
 plt.hist(df['Class'])
 plt.show()
 
